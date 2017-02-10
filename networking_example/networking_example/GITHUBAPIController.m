@@ -38,7 +38,7 @@ static NSString *const kBaseAPIURL = @"https://api.github.com";
 
 #pragma mark - Inner requests
 
-- (void)getInfoForUser:(NSString *)userName
+- (void)getLink:(NSString *)userName
     success:(void (^)(NSDictionary *))success
     failure:(void (^)(NSError *))failure
 {
@@ -59,6 +59,21 @@ static NSString *const kBaseAPIURL = @"https://api.github.com";
     
 }
 
+- (void)getInfoForUser:(NSString *)userName
+               success:(void (^)(NSDictionary *))success
+               failure:(void (^)(NSError *))failure
+{
+    [self getLink:userName success:success failure:failure];
+}
+
+- (void)getRepositoriesForUser:(NSString *)userName
+               success:(void (^)(NSDictionary *))success
+               failure:(void (^)(NSError *))failure
+{
+    NSString *link = [NSString stringWithFormat:@"%@/repos", userName];
+    [self getLink:link success:success failure:failure];
+}
+
 #pragma mark - Public methods
 
 - (void)getAvatarForUser:(NSString *)userName
@@ -67,13 +82,30 @@ static NSString *const kBaseAPIURL = @"https://api.github.com";
 {
     [self getInfoForUser:userName
         success:^(NSDictionary *userInfo) {
-            NSString *avatarURLString = userInfo[@"avatar_url"];
-            NSURL *avatarURL = [NSURL URLWithString:avatarURLString];
-            success(avatarURL);
+            if(!!userInfo[@"avatar_url"]) {
+                NSString *avatarURLString = userInfo[@"avatar_url"];
+                NSURL *avatarURL = [NSURL URLWithString:avatarURLString];
+                success(avatarURL);
+            } else {
+                failure(nil);
+            }
         }
         failure:^(NSError *error) {
             failure(error);
         }];
+}
+
+- (void)getRepositoriesListForUser:(NSString *)userName
+                           success:(void (^)(NSDictionary *))success
+                           failure:(void (^)(NSError *))failure
+{
+    [self getRepositoriesForUser:userName
+                 success:^(NSDictionary *repoArray) {
+                     success(repoArray);
+                 }
+                 failure:^(NSError *error) {
+                     failure(error);
+                 }];
 }
 
 @end

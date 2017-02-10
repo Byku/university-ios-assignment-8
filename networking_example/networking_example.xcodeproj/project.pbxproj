@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		113B96476942ACFD196BCACD /* RepositoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 113B983F3444049655BDDBBB /* RepositoryCell.m */; };
+		113B97D12874D688A2B04E2E /* UserInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113B9A4BD2ADA2AE322774BC /* UserInfoController.m */; };
 		51404CE361ED4826A0BDE3C4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C2F1CEAB4AE426A8406E4A4 /* libPods.a */; };
 		AEB73B3218E9979F0021BCCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB73B3118E9979F0021BCCD /* Foundation.framework */; };
 		AEB73B3418E9979F0021BCCD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB73B3318E9979F0021BCCD /* CoreGraphics.framework */; };
@@ -23,6 +25,11 @@
 		AEB73B5B18E9979F0021BCCD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AEB73B5918E9979F0021BCCD /* InfoPlist.strings */; };
 		AEB73B5D18E9979F0021BCCD /* networking_exampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB73B5C18E9979F0021BCCD /* networking_exampleTests.m */; };
 		AEB73B6818E99BEB0021BCCD /* GITHUBAPIController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB73B6718E99BEB0021BCCD /* GITHUBAPIController.m */; };
+		DA0A82F71E3F076D001967A4 /* RepositoryListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0A82F51E3F076D001967A4 /* RepositoryListVC.m */; };
+		DA0A82F81E3F076D001967A4 /* RepositoryListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA0A82F61E3F076D001967A4 /* RepositoryListVC.xib */; };
+		DA0A82FA1E4330E4001967A4 /* RepositoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA0A82F91E4330E4001967A4 /* RepositoryCell.xib */; };
+		DA0A83021E4C1EC1001967A4 /* RepositoryList2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0A83001E4C1EC1001967A4 /* RepositoryList2VC.m */; };
+		DA0A83031E4C1EC1001967A4 /* RepositoryList2VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA0A83011E4C1EC1001967A4 /* RepositoryList2VC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		113B95AC59621BF8EFA2D67C /* RepositoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepositoryCell.h; sourceTree = "<group>"; };
+		113B983F3444049655BDDBBB /* RepositoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepositoryCell.m; sourceTree = "<group>"; };
+		113B9A4BD2ADA2AE322774BC /* UserInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoController.m; sourceTree = "<group>"; };
+		113B9C12AF3DE9EFA1A072D7 /* UserInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoController.h; sourceTree = "<group>"; };
 		5C2F1CEAB4AE426A8406E4A4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D5340F88378DB305CABB8D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AEB73B2E18E9979F0021BCCD /* networking_example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = networking_example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +70,13 @@
 		AEB73B5C18E9979F0021BCCD /* networking_exampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = networking_exampleTests.m; sourceTree = "<group>"; };
 		AEB73B6618E99BEB0021BCCD /* GITHUBAPIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GITHUBAPIController.h; sourceTree = "<group>"; };
 		AEB73B6718E99BEB0021BCCD /* GITHUBAPIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GITHUBAPIController.m; sourceTree = "<group>"; };
+		DA0A82F41E3F076D001967A4 /* RepositoryListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepositoryListVC.h; sourceTree = "<group>"; };
+		DA0A82F51E3F076D001967A4 /* RepositoryListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepositoryListVC.m; sourceTree = "<group>"; };
+		DA0A82F61E3F076D001967A4 /* RepositoryListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RepositoryListVC.xib; sourceTree = "<group>"; };
+		DA0A82F91E4330E4001967A4 /* RepositoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RepositoryCell.xib; sourceTree = "<group>"; };
+		DA0A82FF1E4C1EC1001967A4 /* RepositoryList2VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepositoryList2VC.h; sourceTree = "<group>"; };
+		DA0A83001E4C1EC1001967A4 /* RepositoryList2VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepositoryList2VC.m; sourceTree = "<group>"; };
+		DA0A83011E4C1EC1001967A4 /* RepositoryList2VC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RepositoryList2VC.xib; sourceTree = "<group>"; };
 		E79446CDBF636735AED58B0A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,9 +155,20 @@
 				AEB73B4618E9979F0021BCCD /* ViewController.h */,
 				AEB73B4718E9979F0021BCCD /* ViewController.m */,
 				AEB73B4918E9979F0021BCCD /* Images.xcassets */,
+				DA0A82F41E3F076D001967A4 /* RepositoryListVC.h */,
+				DA0A82F51E3F076D001967A4 /* RepositoryListVC.m */,
+				DA0A82F61E3F076D001967A4 /* RepositoryListVC.xib */,
+				DA0A82FF1E4C1EC1001967A4 /* RepositoryList2VC.h */,
+				DA0A83001E4C1EC1001967A4 /* RepositoryList2VC.m */,
+				DA0A83011E4C1EC1001967A4 /* RepositoryList2VC.xib */,
 				AEB73B3818E9979F0021BCCD /* Supporting Files */,
 				AEB73B6618E99BEB0021BCCD /* GITHUBAPIController.h */,
 				AEB73B6718E99BEB0021BCCD /* GITHUBAPIController.m */,
+				113B9C12AF3DE9EFA1A072D7 /* UserInfoController.h */,
+				113B9A4BD2ADA2AE322774BC /* UserInfoController.m */,
+				113B983F3444049655BDDBBB /* RepositoryCell.m */,
+				113B95AC59621BF8EFA2D67C /* RepositoryCell.h */,
+				DA0A82F91E4330E4001967A4 /* RepositoryCell.xib */,
 			);
 			path = networking_example;
 			sourceTree = "<group>";
@@ -254,6 +283,9 @@
 			files = (
 				AEB73B4A18E9979F0021BCCD /* Images.xcassets in Resources */,
 				AEB73B3C18E9979F0021BCCD /* InfoPlist.strings in Resources */,
+				DA0A83031E4C1EC1001967A4 /* RepositoryList2VC.xib in Resources */,
+				DA0A82F81E3F076D001967A4 /* RepositoryListVC.xib in Resources */,
+				DA0A82FA1E4330E4001967A4 /* RepositoryCell.xib in Resources */,
 				AEB73B4518E9979F0021BCCD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,9 +354,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEB73B4818E9979F0021BCCD /* ViewController.m in Sources */,
+				DA0A82F71E3F076D001967A4 /* RepositoryListVC.m in Sources */,
 				AEB73B6818E99BEB0021BCCD /* GITHUBAPIController.m in Sources */,
 				AEB73B4218E9979F0021BCCD /* AppDelegate.m in Sources */,
 				AEB73B3E18E9979F0021BCCD /* main.m in Sources */,
+				DA0A83021E4C1EC1001967A4 /* RepositoryList2VC.m in Sources */,
+				113B97D12874D688A2B04E2E /* UserInfoController.m in Sources */,
+				113B96476942ACFD196BCACD /* RepositoryCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +491,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "networking_example/networking_example-Prefix.pch";
 				INFOPLIST_FILE = "networking_example/networking_example-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -469,6 +506,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "networking_example/networking_example-Prefix.pch";
 				INFOPLIST_FILE = "networking_example/networking_example-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
